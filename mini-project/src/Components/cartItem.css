@@ -1,0 +1,30 @@
+.cartItem{
+    display:inline-flex;
+    margin: 3rem 2rem;
+    margin-top:2rem;
+    width: 70%;
+    border:1px solid black;
+    justify-content: space-between;
+}
+
+.cartItem-right{
+    padding: 1rem 1rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    
+}
+
+.cartItem-left{
+   margin:1rem;
+}
+
+.cartItem-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+
