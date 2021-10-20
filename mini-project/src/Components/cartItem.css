@@ -2,29 +2,39 @@
     display:inline-flex;
     margin: 3rem 2rem;
     margin-top:2rem;
-    width: 70%;
-    border:1px solid black;
+    width:50%;
+    border:1px solid gray;
     justify-content: space-between;
 }
 
 .cartItem-right{
     padding: 1rem 1rem;
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     width: 70%;
     align-items: center;
-    
+    padding:1rem;
 }
 
 .cartItem-left{
    margin:1rem;
+   width:40%;
 }
 
 .cartItem-actions{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 30%;
+}
+
+FontAwesomeIcons{
+    color:black;
+}
+
+img{
+    width:80%;
+    height:100%;
 }
 
