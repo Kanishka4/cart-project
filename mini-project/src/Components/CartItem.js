@@ -3,11 +3,10 @@ import './cartItem.css';
 import { faPlusCircle, faMinusCircle, faTrash} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-class CartItem extends React.Component{
+const CartItem=(props)=>{
 
-    
-    render(){
-        const {name,price,qty,url}=this.props.product;
+        const {name,price,qty,url}=props.product;
+
         return(
             <div className="cartItem">
                 <div className="cartItem-left">
@@ -19,14 +18,13 @@ class CartItem extends React.Component{
                     <div>Quantity: {qty}</div>
 
                     <div className="cartItem-actions">
-                        <FontAwesomeIcon icon={faPlusCircle} onClick={()=>this.props.onIncreaseQuantity(this.props.product)}></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faMinusCircle}  onClick={()=>this.props.onDecreaseQuantity(this.props.product)}></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faTrash}  onClick={()=>this.props.onDelete(this.props.product.id)}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faPlusCircle} onClick={()=>props.onIncreaseQuantity(props.product)}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faMinusCircle}  onClick={()=>props.onDecreaseQuantity(props.product)}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faTrash}  onClick={()=>props.onDelete(props.product.id)}></FontAwesomeIcon>
                     </div>
                 </div>
             </div>
         );
-    }
 }
 
 export default CartItem;
